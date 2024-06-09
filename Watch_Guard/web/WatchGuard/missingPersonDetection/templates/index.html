@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Guard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Custom styles */
+        body {
+            background: url("C:/Users/C:\Users\user\Downloads\project_new\project_1\myapp\templates\1.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin-bottom: 60px; /* Add bottom margin equal to footer height */
+        }
+
+        .navbar {
+            background-color: rgb(46, 54, 63);
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: yellow !important;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 0.75rem; /* Added mr-3 class equivalent */
+        }
+
+        .navbar-light .navbar-toggler {
+            color: yellow;
+            border-color: rgba(255, 255, 0, 0.1);
+        }
+
+        .jumbotron {
+            background-color: rgba(88, 106, 124, 0.8); /* Adding transparency */
+            color: #fff;
+            padding: 4rem 16rem;
+            text-align: center;
+        }
+
+        footer.footer {
+            background-color: rgb(46, 54, 63);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer.footer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body style="background-color: #212529;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{% url 'home_page' %}">Watch Guard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'abouts_page' %}">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'mp_page' %}">Missing Person Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'fr_page' %}">Face Recognition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact_page' %}">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="jumbotron text-center">
+        <h1>AI-powered Missing Person Detection</h1>
+        <p>Embark on a revolutionary journey in safeguarding communities with Watch Guard. 
+            Our cutting-edge technology redefines missing person detection, setting a new standard for precision and efficiency. 
+            Powered by state-of-the-art artificial intelligence, our solution not only identifies missing individuals 
+            but also provides in-depth analysis, revolutionizing the search process.</p>
+      </div>
+      <section class="section2">
+        <div class="container">
+          <div class="row" style="color: rgb(12, 182, 12);">
+            <div class="col-md-8 mx-auto">
+              <h2 class="text-center mb-4">Watch Guard</h2>
+              <p>Experience the future of identity verification with Watch Guard, 
+                an advanced AI application poised to revolutionize the authentication process. 
+                Seamlessly recognizing and verifying individuals by simply entering their name, Watch Guard dynamically adapts, 
+                instantly identifying individuals as they step into view of the camera. Embracing cutting-edge technology, 
+                Watch Guard sets a new standard in identity verification, 
+                offering a glimpse into a future where security and convenience converge effortlessly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 WatchGuard's. All Rights Reserved.</p>
+        <p>Designed with <i class="fas fa-heart text-danger"></i> by Crazy Developers</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIqYj2jz+gnUAI5Zm9nrzkfspZ2Srn8CwlP8lgut4+AjvYTC+h+" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgzDQN0bZj5uV0LOw3eA07fIVbknKuh5Zx1K+q8vb6YK5c2Ib+4" crossorigin="anonymous"></script>
+</body>
+</html>
